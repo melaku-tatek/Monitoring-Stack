@@ -94,7 +94,7 @@ services:
     volumes:
       - ./logstash.conf:/usr/share/logstash/pipeline/logstash.conf
     ports:
-      - "5100:5000"
+      - "5100:5100"
     environment:
       - LS_JAVA_OPTS=-Xmx256m -Xms256m
     depends_on:
